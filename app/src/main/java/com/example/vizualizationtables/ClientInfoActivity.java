@@ -138,7 +138,7 @@ public class ClientInfoActivity extends AppCompatActivity {
     public static String getInfoAboutClient(String codeClient) {
         OkHttpClient client = new OkHttpClient();
         HttpUrl.Builder urlBuilder = HttpUrl.parse("http://89.151.143.135:8103/GetClientInfo").newBuilder();
-        urlBuilder.addQueryParameter("token", "E820C969-A60A-4E19-A086-2BF07AAD2088");
+        urlBuilder.addQueryParameter("token", "");
         urlBuilder.addQueryParameter("kod", codeClient);
         String url = urlBuilder.build().toString();
         System.out.println(url);
