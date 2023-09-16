@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
     public static String getCodeNameClients() {
         OkHttpClient client = new OkHttpClient();
         HttpUrl.Builder urlBuilder = HttpUrl.parse("http://89.151.143.135:8103/GetClients").newBuilder();
-        urlBuilder.addQueryParameter("token", "E820C969-A60A-4E19-A086-2BF07AAD2088");
+        urlBuilder.addQueryParameter("token", "");
         String url = urlBuilder.build().toString();
         System.out.println(url);
 
